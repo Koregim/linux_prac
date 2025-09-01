@@ -13,7 +13,9 @@
 #	-m 2G \
 #	-smp 2
 git:
-	git add *
+	git add * \
+	git commit -m test \
+	git push
 QEMU_run:
 	qemu-system-aarch64 \
 	-kernel linux/arch/arm64/boot/Image \
