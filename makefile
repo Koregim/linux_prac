@@ -12,6 +12,8 @@
 #	-nographic -M virt -cpu cortex-a72 \
 #	-m 2G \
 #	-smp 2
+git:
+	git add *
 QEMU_run:
 	qemu-system-aarch64 \
 	-kernel linux/arch/arm64/boot/Image \
